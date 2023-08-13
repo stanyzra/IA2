@@ -1,7 +1,6 @@
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
-import itertools
 
 
 def insert_movie_data(actual_movie_preference):
@@ -107,6 +106,14 @@ def pertinence_levels(
     recommendation_score["recomendar"] = fuzz.trapmf(
         recommendation_score.universe, [4, 8, 10, 10]
     )
+
+    # # Plotando os gráficos
+    # genre.view()
+    # user_rating.view()
+    # popularity.view()
+    # cast.view()
+    # director.view()
+    # recommendation_score.view()
 
     return genre, user_rating, cast, director, popularity, recommendation_score
 
