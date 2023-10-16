@@ -18,3 +18,5 @@ if __name__ == "__main__":
         if len(samples) > max_sample_number:
             for sample in samples[max_sample_number:]:
                 os.remove(f"{sys.path[0]}/database/{brand}/{sample}")
+
+    print("Base de dados reduzida com sucesso.\n")
